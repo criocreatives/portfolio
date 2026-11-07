@@ -30,17 +30,6 @@
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block}
     .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
-    header{
-      position:sticky;top:0;z-index:20;
-      backdrop-filter:blur(16px);
-      background:rgba(237,28,36,.96);
-      border-bottom:1px solid rgba(255,255,255,.18);
-    }
-    .nav{height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand img{display:block;width:168px;height:48px;object-fit:cover;border-radius:9px}
-    .navlinks{display:flex;gap:26px;align-items:center;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
-    .navlinks a{color:#fff}
-    .navlinks a:hover{color:#fff}
     .btn{
       display:inline-flex;align-items:center;justify-content:center;
       min-height:48px;padding:0 20px;border-radius:9px;
@@ -142,7 +131,6 @@
       .hero-bottom,.experience{grid-template-columns:1fr;gap:24px}
       .skills{grid-template-columns:repeat(2,1fr)}
       .card.large,.card.small,.card.half{grid-column:span 12}
-      .navlinks a:not(.btn){display:none}
       .hero{padding-top:64px}
     }
     @media(max-width:520px){
@@ -150,25 +138,24 @@
       .skills,.app-grid{grid-template-columns:1fr}
       .skill{min-height:auto}
       .thumb{height:230px}
-      .nav{height:62px}
-      .brand img{width:147px;height:42px}
       .btn{min-height:42px;padding:0 15px}
       section{padding:58px 0}
     }
   </style>
 <link rel="stylesheet" href="https://criocreatives.com/assets/css/crio-subpage.css?v=1">
 <link rel="stylesheet" href="/assets/css/portfolio-2026.css?v=1">
+<link rel="stylesheet" href="https://criocreatives.com/assets/css/site-header.css?v=2">
+<script defer src="https://criocreatives.com/assets/js/site-header.js?v=1"></script>
 </head>
 <body class="crio-subpage crio-portfolio-page">
-<header class="crio-shell-header" id="site-header">
-  <div class="crio-shell-inner">
-    <a class="crio-shell-brand" href="https://criocreatives.com/" aria-label="Crio Creatives home"><img class="crio-shell-logo" src="https://criocreatives.com/assets/logos/Crio%20Creatives%20Logo%20wide%20white.svg" alt="Crio Creatives"></a>
-    <span class="crio-shell-current">Portfolio</span>
-    <button class="crio-shell-menu menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
-    <nav class="crio-shell-nav" id="site-nav" aria-label="Portfolio navigation">
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a class="brand" href="https://criocreatives.com/" aria-label="Crio Creatives home"><img class="header-logo" src="https://criocreatives.com/assets/logos/Crio%20Creatives%20Logo%20wide%20white.svg" alt="Crio Creatives"></a>
+    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">MENU</button>
+    <nav class="nav" id="site-nav" aria-label="Portfolio navigation">
       <a href="#work">Selected Work</a><a href="#skills">Capabilities</a><a href="#apps">Apps</a>
       <a href="https://criocreatives.com/previews/">Previews</a>
-      <a class="crio-shell-contact" href="https://criocreatives.com/#contact">Contact</a>
+      <a class="nav-contact" href="https://criocreatives.com/#contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -406,6 +393,5 @@
 
 <!-- LibreCounter: privacy-friendly page analytics -->
 <img src="https://librecounter.org/hidden.svg" referrerpolicy="unsafe-url" alt="" width="1" height="1" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">
-<script src="https://criocreatives.com/assets/js/site.js?v=2"></script>
 </body>
 </html>
