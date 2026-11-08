@@ -81,7 +81,7 @@ body.crio-portfolio-page .skill:nth-child(4n){border-right:0;padding-left:25px}
 body.crio-portfolio-page .skill:nth-child(4n+2),body.crio-portfolio-page .skill:nth-child(4n+3){padding-left:25px}
 body.crio-portfolio-page .skill b{font:500 clamp(18px,1.8vw,24px)/1.2 var(--crio-display);letter-spacing:-.025em;color:#f4f4f4;margin-bottom:14px}
 body.crio-portfolio-page .skill span{color:#b4b4b9;font:400 13px/1.75 var(--crio-body)}
-body.crio-portfolio-page .grid{gap:clamp(22px,2.6vw,40px)}
+body.crio-portfolio-page .grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:18px}
 body.crio-portfolio-page .card{
   display:flex;flex-direction:column;min-height:0;overflow:hidden;
   background:#111214;border:1px solid rgba(244,244,244,.08);
