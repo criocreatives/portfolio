@@ -18,7 +18,8 @@ body.crio-portfolio-page .eyebrow,body.crio-portfolio-page .kicker{
 }
 body.crio-portfolio-page .eyebrow{margin-bottom:26px}
 body.crio-portfolio-page .hero{
-  min-height:90svh;padding:clamp(185px,20vh,270px) 0 clamp(100px,12vh,160px);
+  min-height:82svh;box-sizing:border-box;
+  padding:clamp(150px,16vh,210px) 0 clamp(75px,9vh,110px);
   border-bottom:1px solid var(--line);background:#090909;display:flex;align-items:flex-end;
 }
 body.crio-portfolio-page .hero>.wrap{
